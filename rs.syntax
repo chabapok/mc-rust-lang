@@ -1,0 +1,140 @@
+# RUST syntax highlight for mc
+# by chabapok
+
+context default
+    keyword whole fn yellow
+    keyword whole break yellow
+    keyword whole const yellow
+    keyword whole continue yellow
+    keyword whole do yellow
+    keyword whole enum yellow
+    keyword whole loop yellow
+    keyword whole mod yellow
+    keyword whole pub yellow
+    keyword whole priv yellow
+    keyword whole super yellow
+    keyword whole impl yellow
+    keyword whole struct yellow
+    keyword whole type yellow
+    keyword whole Self yellow
+    keyword whole self yellow
+    keyword whole extern yellow
+    keyword whole crate yellow
+    keyword whole let yellow
+    keyword whole mut yellow
+    keyword whole static yellow
+    keyword whole suser yellow
+    keyword whole trait yellow
+    keyword whole unsafe yellow
+    keyword whole for yellow
+    keyword whole match yellow
+    keyword whole if yellow
+    keyword whole else yellow
+    keyword whole in yellow
+    keyword whole use yellow
+    keyword whole while yellow
+    keyword whole ref yellow
+    keyword whole Box yellow
+    keyword whole return yellow
+    keyword whole where yellow
+    keyword whole as yellow
+    keyword whole move yellow
+
+
+
+    keyword whole Copy yellow
+    keyword whole Sized yellow
+    keyword whole Drop yellow
+    keyword whole Deref yellow
+    keyword whole DerefMut yellow
+    keyword whole Send yellow
+    keyword whole Sync yellow
+
+    keyword whole f32 yellow
+    keyword whole f64 yellow
+    keyword whole char yellow
+    keyword whole bool yellow
+
+    keyword whole str yellow
+
+    keyword whole u8 yellow
+    keyword whole i8 yellow
+    keyword whole u16 yellow
+    keyword whole i16 yellow
+    keyword whole u32 yellow
+    keyword whole i32 yellow
+    keyword whole u64 yellow
+    keyword whole i64 yellow
+    keyword whole u128 yellow
+    keyword whole i128 yellow
+
+    keyword whole isize yellow
+    keyword whole usize yellow
+
+
+    keyword whole true yellow
+    keyword whole false yellow
+
+
+    keyword & brightmagenta
+    keyword ( brightcyan
+    keyword ) brightcyan
+    keyword { brightcyan
+    keyword } brightcyan
+    keyword [ brightcyan
+    keyword ] brightcyan
+
+    keyword -> gray
+
+    keyword whole == yellow
+    keyword whole != yellow
+    keyword > yellow
+    keyword < yellow
+
+    keyword whole += yellow
+    keyword whole -= yellow
+    keyword whole %= yellow
+
+    keyword whole ^ yellow
+    keyword whole || yellow
+    keyword whole && yellow
+
+    keyword \[abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_\]! brightred
+
+    keyword ! yellow
+
+    keyword r#" brightred
+    keyword "# brightred
+
+    keyword b" brightred
+    keyword " brightred
+
+    keyword \'\{abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_\} cyan
+
+
+context exclusive struct { cyan
+
+context exclusive impl { cyan
+
+context #[ ] brightcyan
+
+context #![ ] brightcyan
+
+
+context exclusive b" " brown
+    spellcheck
+
+
+context exclusive r#" "# brown
+    spellcheck
+
+
+context exclusive " " brown
+    spellcheck
+
+
+context // \n green
+    spellcheck
+
+context /\* \*/ green
+    spellcheck
