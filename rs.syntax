@@ -72,9 +72,15 @@ context default
     keyword whole usize yellow
 
 
+    keyword wholeright \[ui\]8 yellow
+    keyword wholeright \[ui\]16 yellow
+    keyword wholeright \[ui\]32 yellow
+    keyword wholeright \[ui\]64 yellow
+    keyword wholeright \[ui\]128 yellow
+    keyword wholeright \[ui\]size yellow
+
     keyword whole true yellow
     keyword whole false yellow
-
 
     keyword & brightmagenta
     keyword ( brightcyan
@@ -112,13 +118,25 @@ context default
     keyword \'\{abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_\} cyan
 
 
+
+
+context exclusive impl for cyan
+    keyword < yellow
+    keyword > yellow
+
 context exclusive struct { cyan
+    keyword < yellow
+    keyword > yellow
+
 
 context exclusive impl { cyan
+    keyword < yellow
+    keyword > yellow
 
 context #[ ] brightcyan
 
 context #![ ] brightcyan
+
 
 
 context exclusive b" " brown
@@ -130,6 +148,8 @@ context exclusive r#" "# brown
 
 
 context exclusive " " brown
+    keyword {} magenta
+    keyword {:?} magenta
     spellcheck
 
 
