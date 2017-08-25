@@ -119,12 +119,7 @@ context default
 
 
 
-
-context exclusive impl for cyan
-    keyword < yellow
-    keyword > yellow
-
-context exclusive struct { cyan
+context exclusive whole struct { cyan
     keyword < yellow
     keyword > yellow
 
@@ -132,6 +127,7 @@ context exclusive struct { cyan
 context exclusive impl { cyan
     keyword < yellow
     keyword > yellow
+
 
 context #[ ] brightcyan
 
