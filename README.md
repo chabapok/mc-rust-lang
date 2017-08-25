@@ -12,22 +12,22 @@ include rs.syntax
 ```
 
 
-# Если вы хотите оказать помощь проекту
+# If you want to help this project
 
-* В настоящее время полной поддержки синтаксиса нет. Если вы расширите поддержку - буду рад PR-у.
-* Русский текст в ридми можно перевести на английский
+* Right now we don't have full syntax support. I would be glad to get your PR with extended syntax support.
 
-# В настоящее время не поддерживается:
+# At that moment we do not support:
 
 ```
-//это какое-то синтаксическое безумие. Впринципе, подсветить это можно,
-//но навскидку в The Reference я не нашел такого синтаксиса, поэтому такое увидется как кавычки.
+// This is syntax madness. In general, we could highlight it,
+// but i didn't find such syntax in the reference, that why it looks like quotes.
 let x = r###"abcdefg"###;
 
-//контент внутри скобок не парсится каким-то особым образом, или парсится плохо
+// content inside the brackets doesn't parse in any special way or parse badly
+// 
 impl<....>
 
-//хотелось бы раскрасить поля и их тип в струкрутах:
+// it would be nice to colorize fields and their types in structures
 struct Foo {
  v: MyType
 }
@@ -35,13 +35,12 @@ struct Foo {
 ```
 
 
-# Если не работает
+# If doesn't work
 
-* Убедиться, что вы запускаете `mcedit` а не `mcview`. В `mcview` подсветки нет.
-* Попробовать ctrl+s. В mc эта комбинация - syntax, а не save
-* Убедиться, что в файл Syntax паттерн прописан до unknown. (можно вообще вначале файла прописать)
-* Убедиться, что нет `~/.config/mc/mcedit/Syntax`. Если он есть - надо конфиг прописать в него
-* Возможно, в вашем mc пути к конфигам другие. В `man mcedit` об этом должно быть
+* Make sure, that you use `mcedit` and not `mcview`. Right now `mcview` doesn't have syntax highlight. 
+* Try ctrl+s. In mc this key combination -- syntax, and not save
+* Make sure, that pattern is written till unknown in the Syntax file. (it possible to write in begin of file)
+* Make sure, that file `~/.config/mc/mcedit/Syntax` doesn't exist. If file exists you need to write configuration inside
+* Perhaps, your mc could use other paths to configs. Read `man mcedit` about it
 
-Если после этого не заработало, а потом вы смогли его завести, то нужно сделать PR c описанием проблемы и ее решения.
-
+If after this steps it still doesn't work you could try to find solution and create PR with problem description  and solution.
