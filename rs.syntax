@@ -82,7 +82,7 @@ context default
     keyword whole true yellow
     keyword whole false yellow
 
-    keyword & brightmagenta
+    keyword & brightgreen
     keyword ( brightcyan
     keyword ) brightcyan
     keyword { brightcyan
@@ -91,6 +91,8 @@ context default
     keyword ] brightcyan
 
     keyword -> gray
+
+    keyword :: white
 
     keyword whole == yellow
     keyword whole != yellow
